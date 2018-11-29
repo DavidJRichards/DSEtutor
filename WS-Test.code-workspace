@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "PJ-arduino-blink"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Users\\David.Richards\\.platformio\\penv\\Scripts;C:\\Users\\David.Richards\\.platformio\\penv;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Seapine\\Surround SCM;C:\\utils\\strawberry\\c\\bin;C:\\utils\\strawberry\\perl\\site\\bin;C:\\utils\\strawberry\\perl\\bin;C:\\Program Files (x86)\\Microsoft Team Foundation Server 2015 Power Tools\\;C:\\Program Files\\doxygen\\bin;C:\\TDM-GCC-32\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Sennheiser\\SoftphoneSDK\\;C:\\Users\\David.Richards\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\IDM Computer Solutions\\UEStudio\\;C:\\Program Files\\IDM Computer Solutions\\UltraFinder\\;;C:\\Users\\David.Richards\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Seapine\\Surround SCM;C:\\utils\\strawberry\\c\\bin;C:\\utils\\strawberry\\perl\\site\\bin;C:\\utils\\strawberry\\perl\\bin;C:\\Program Files (x86)\\Microsoft Team Foundation Server 2015 Power Tools\\;C:\\Program Files\\doxygen\\bin;C:\\TDM-GCC-32\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Sennheiser\\SoftphoneSDK\\;C:\\Users\\David.Richards\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\IDM Computer Solutions\\UEStudio\\;C:\\Program Files\\IDM Computer Solutions\\UltraFinder\\;;C:\\Users\\David.Richards\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}
