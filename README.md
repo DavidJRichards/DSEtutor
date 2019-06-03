@@ -5,7 +5,7 @@ Arduino development IDE download here: https://www.arduino.cc/en/Main/Software
 PlatformIO uses the Microsoft VSCode environment which includes source control and debugging capability.
 It is free and available here: https://platformio.org/install/ide?install=vscode
 
-The example program uses a LED / Button board TM1638QY image here: ![GitHub Logo](/IMG_20181015_184029.jpg)
+The example program uses a LED / Button board TM1638QY image here: ![GitHub Logo](/IMG_20190603_171809.png)
 More board info here: http://we.easyelectronics.ru/part/osobennosti-adresacii-kontrollera-tm1638-dlya-indikatorov-s-oa.html 
 
 Example program uses the TM1638 library, download here: https://github.com/rjbatista/tm1638-library
