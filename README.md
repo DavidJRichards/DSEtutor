@@ -9,6 +9,8 @@ The example program uses a LED / Button board TM1638QY image here: ![GitHub Logo
 
 Example program uses the TM1638 library, download here: https://github.com/rjbatista/tm1638-library
 
+Information needed to use low cost WAVGAT UNO R3 loard here: https://forum.arduino.cc/index.php?topic=572510.0
+
 A simple application of the button / display module would be to make a calculator. There are plenty of kkeys available for digits and other functions.
 
 A versatile way would be where numbers could be entered onto a stack and then operated on by pressing one of the buttons.
