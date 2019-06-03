@@ -25,6 +25,8 @@ Codes are hex values coresponding to button presses
 The character symbols represent the button purpose
 Arithmatic operators on the left, enter and shift on right.
 
+|         |         |         |        |
+|---------|---------|---------|--------|
 |0001 '+'	|0002 '7'	|0004 '8'	|0008 '9'|
 |0010 '-'	|0020 '4'	|0040 '5'	|0080 '6'|
 |0100 'x'	|0200 '1'	|0400 '2'	|0800 '3'|
@@ -36,14 +38,15 @@ Numbers are pushed onto a stack, operators perform on numbers on stack leaving r
 
 Typical key press and display sequences.
 
-* key	display
-* blank
-* 1	1
-* 2	12
-* 3	123
-* e	blank
-* 4	4
-* 5	45
-* 6	456
-* e	blank
-* +	479
+|key|display|
+|---|-------|
+|   |blank
+ 1|1
+ 2|12
+ 3|123
+ e|blank
+ 4|4
+ 5|45
+ 6|456
+ e|blank
++|479
