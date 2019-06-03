@@ -6,6 +6,7 @@ PlatformIO uses the Microsoft VSCode environment which includes source control a
 It is free and available here: https://platformio.org/install/ide?install=vscode
 
 The example program uses a LED / Button board TM1638QY image here: ![GitHub Logo](/IMG_20181015_184029.jpg)
+More board info here: http://we.easyelectronics.ru/part/osobennosti-adresacii-kontrollera-tm1638-dlya-indikatorov-s-oa.html 
 
 Example program uses the TM1638 library, download here: https://github.com/rjbatista/tm1638-library
 
