@@ -31,14 +31,14 @@ typedef struct t_keymap {
 #define MAXSIZE 5
 struct stack
 {
-    int stk[MAXSIZE];
+    unsigned int stk[MAXSIZE];
     int top;
 };
 typedef struct stack STACK;
 STACK s;
  
-void stk_push(int);
-int  stk_pop(void);
+void stk_push(unsigned int);
+unsigned int  stk_pop(void);
 void stk_display(void);
 
 // 4x4 keypad single press button values mapped to ASCII characters
@@ -133,21 +133,27 @@ void commandprocess(int mycommand)
   case BTN_DEP:
     deposit_data = strtol(cmdline, NULL, 8);  
     stk_push(deposit_data); 
+    _tm1638->setDisplayToDecNumber(deposit_data, 1<<6, false);
+    bufferupdate(BTN_CLR);
     break;
   case BTN_EXAM:
     deposit_data=stk_pop();
     _tm1638->setDisplayToDecNumber(deposit_data, 1<<6, false);
+    bufferupdate(BTN_CLR);
     break;
   case BTN_LAD:
-    load_address =stk_pop() + strtol(cmdline, NULL, 8); 
+//    load_address =stk_pop() + strtol(cmdline, NULL, 8); 
+    load_address = stk_pop() + stk_pop(); 
     stk_push(load_address);
     _tm1638->setDisplayToDecNumber(load_address, 1<<7,false);
-
+    bufferupdate(BTN_CLR);
     break;
   case BTN_LSR:
-    load_address = stk_pop() - strtol(cmdline, NULL, 8); 
+//    load_address = stk_pop() - strtol(cmdline, NULL, 8); 
+    load_address = stk_pop() - stk_pop(); 
     stk_push(load_address);
     _tm1638->setDisplayToDecNumber(load_address, 1<<7,false);
+    bufferupdate(BTN_CLR);
     break;
   default:
     displayupdate(cmdline);       
@@ -187,7 +193,7 @@ void update(void) {
 //--------------------------------------------------------------
 
 /*  Function to add an element to the stack */
-void stk_push (int num)
+void stk_push (unsigned int num)
 {
     if (s.top == (MAXSIZE - 1))
     {
@@ -204,10 +210,10 @@ void stk_push (int num)
 }
 
 /*  Function to delete an element from the stack */
-int stk_pop ()
+unsigned int stk_pop ()
 {
-    int num;
-    if (s.top == - 1)
+    unsigned int num;
+    if (s.top == (int)- 1)
     {
        Serial.write("Stack is Empty\n");
         return (s.top);
@@ -235,7 +241,7 @@ void stk_display ()
         Serial.print("\n The status of the stack is \n");
         for (i = s.top; i >= 0; i--)
         {
-          sprintf(buf, "Element %d, Value %o\n",i, s.stk[i]);
+          sprintf(buf, "Element %d, Value %j\n",i, s.stk[i]);
           Serial.print(buf);
         }
     }
